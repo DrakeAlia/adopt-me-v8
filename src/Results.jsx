@@ -12,6 +12,7 @@ const Results = ({ pets }) => {
                         // {...pet}
                         // This is better explicit here:
                         animal={pet.animal}
+                        id={pet.id}
                         name={pet.name}
                         breed={pet.breed}
                         images={pet.images}

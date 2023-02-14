@@ -16,7 +16,10 @@ class Carousel extends Component {
         })
     }
 
+    // Every class component must have a render function
     render() {
+        // Testing if an error is caught, below:
+        // throw new Error("lol error")
         const { active } = this.state
         const { images } = this.props
         // Cannot use hooks here because we are using class component here :(

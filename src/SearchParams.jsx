@@ -32,6 +32,7 @@ const SearchParams = () => {
                 setRequestParams(obj)
             }}
             >
+                {/* if we have adopted a pet, display everything */}
                 {
                     adoptedPet ? (
                         <div className="pet image-container">
@@ -39,6 +40,7 @@ const SearchParams = () => {
                         </div>
                     ) : null
                 }
+                {/* if we haven't adopted a pet then display nothing */}
                 <label htmlFor="location">
                     Location
                     <input
